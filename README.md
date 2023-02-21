@@ -2,6 +2,9 @@
 
 Front-end and Backend Ecommerce Store
 
+# Local server
+- http://localhost:3000 
+
 # Details About ecommerce-store
 1. Sass
 2. google fonts
@@ -16,4 +19,5 @@ Front-end and Backend Ecommerce Store
 11. Netlify
 12. TypeScript 
 13. SVG Imports with TypeScript
-14. 
+14. @media screen and (max-width:
+15. Testing

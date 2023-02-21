@@ -23,6 +23,8 @@ export const Body = styled.div`
   background-color: white;
   opacity: 0.7;
   position: absolute;
+  border-radius: 30px;
+  
 
   h2 {
     font-weight: bold;
@@ -48,6 +50,8 @@ export const DirectoryItemContainer = styled.div`
   border: 1px solid black;
   margin: 0 7.5px 15px;
   overflow: hidden;
+  border-radius: 30px;
+  
 
   &:first-child {
     margin-right: 7.5px;
@@ -59,6 +63,7 @@ export const DirectoryItemContainer = styled.div`
 
   &:hover {
     cursor: pointer;
+    transform: scale(1.02);
 
     ${BackgroundImage} {
       transform: scale(1.1);
@@ -68,5 +73,10 @@ export const DirectoryItemContainer = styled.div`
     ${Body} {
       opacity: 0.9;
     }
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 200px;
+    width: 100%
   }
 `;
