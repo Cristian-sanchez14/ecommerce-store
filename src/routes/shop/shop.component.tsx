@@ -14,10 +14,12 @@ const Shop = () => {
   }, []);
 
   return (
-    <Routes>
-      <Route index element={<CategoriesPreview />} />
-      <Route path=':category' element={<Category />} />
-    </Routes>
+    <div className="p-10">
+      <Routes>
+        <Route index element={<CategoriesPreview />} />
+        <Route path=':category' element={<Category />} />
+      </Routes>
+    </div>
   );
 };
 

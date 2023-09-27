@@ -16,6 +16,7 @@ const Home = lazy(() => import('./routes/home/home.component'))
 const Authentication = lazy(() =>
   import('./routes/authentication/authentication.component')
 )
+const Footer = lazy(() => import('./components/Footer/footer.components'))
 
 const App = () => {
   const dispatch = useDispatch()
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="checkout" element={<Checkout />} />
         </Route>
       </Routes>
+      <Footer />
     </Suspense>
   )
 }

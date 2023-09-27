@@ -13,6 +13,7 @@ export const ProductCartContainer = styled.div`
     height: 95%;
     object-fit: cover;
     margin-bottom: 5px;
+    border-radius: 30px;
   }
 
   button {
@@ -74,5 +75,5 @@ export const Name = styled.span`
 `;
 
 export const Price = styled.span`
-  width: 10%;
+  width: 15%;
 `;
