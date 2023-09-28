@@ -14,6 +14,7 @@ export const CheckoutItemContainer = styled.div`
 export const ImageContainer = styled.div`
   width: 23%;
   padding-right: 15px;
+  border-radius: 10px;
 
   img {
     width: 100%;

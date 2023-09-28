@@ -19,8 +19,10 @@ const ifValidCardElement = (
 ): card is StripeCardElement => card !== null;
 
 const PaymentForm = () => {
+  // store reference to strip
   const stripe = useStripe();
   const elements = useElements();
+
   const amount = useSelector(selectCartTotal);
   const currentUser = useSelector(selectCurrentUser);
   const [isProcessingPayment, setIsProcessingPayment] = useState(false);
@@ -34,6 +36,7 @@ const PaymentForm = () => {
 
     setIsProcessingPayment(true);
 
+    // Fetching Payment netflify api
     const response = await fetch('/netlify/functions/create-payment-intent.js', {
       method: 'post',
       headers: {
@@ -61,6 +64,7 @@ const PaymentForm = () => {
 
     setIsProcessingPayment(false);
 
+    // Message to user for successful payment or error
     if (paymentResult.error) {
       alert(paymentResult.error);
     } else {
